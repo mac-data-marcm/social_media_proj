@@ -69,3 +69,10 @@ In addition to ensuring proper data types, the cleaning step would also include 
 print('Missing values:\n', tweets_df.isnull().sum())
 print('Duplicate rows: ', tweets_df.duplicated().sum())
 ```
+
+# Visualize and analyze the data
+In this section, we prepare and display visualizations to help draw inferences from the data.
+
+We start by examining a histogram of likes, which produces a fairly normal distribution.
+![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/f98fe5db-af24-4fca-a280-a5b65d995cc1)
+
