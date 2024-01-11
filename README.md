@@ -84,3 +84,14 @@ fig.show()
 ```
 ![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/f98fe5db-af24-4fca-a280-a5b65d995cc1)
 
+Next, we look at a count of tweets by category. We see that random seeding of categories placed a similar number of "tweets" in each Category
+```
+fig = px.bar(cat_counts, x = 'Category', y = 'count',
+             text_auto = '.2f',
+             title = 'Count of tweets by Category')
+
+fig.show()
+```
+![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/dcfa3c55-d963-431b-88c6-5c6089a36cec)
+
+
