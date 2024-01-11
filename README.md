@@ -9,3 +9,8 @@ The following libraries are used:
 | Library | Purpose |
 |---------|---------|
 | Numpy | randomly choose categories and generate randomm number of "likes" |
+| Pandas | to leverage dataframe capabillities |
+| Matplotlib | to display graphs |
+| Plotly | to create graphs |
+
+# Generate social media data
