@@ -107,5 +107,23 @@ fig.show()
 ```
 ![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/17e02b7c-7490-4f4e-b965-c08eb5105a76)
 
+Next, we look at some statistics on the data, starting with finding the mean value of **Likes**, using the statement:
+```
+print('Mean of Likes: ', tweets_df.Likes.mean())
+```
+The resulting mean of **Likes" is: **5091.8**
+
+We also look at the mean of **Likes** for each category, using the pandas *.grouby()* function and then display the results in a chart. We can see that our generated data is fairly uniform.
+```
+mean_cat = tweets_df.groupby('Category').Likes.mean().reset_index()
+```
+```
+fig = px.bar(mean_cat, x = 'Category', y = 'Likes',
+             text_auto = '.2f',
+             title = 'Mean Likes by Category')
+fig.show()
+```
+![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/35cc1cda-3fae-447c-bc61-9eb96578538e)
+
 
 
