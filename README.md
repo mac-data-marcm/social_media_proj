@@ -14,3 +14,14 @@ The following libraries are used:
 | Plotly | to create graphs |
 
 # Generate social media data
+In this step, we will generate random tweets data to analyze. We start by building a python list of categories.
+```
+categories = ['Food', 'Travel', 'Sports', 'Fitness',
+             'Music', 'Health']
+```
+With the categories in hand, we can create a python dictionary containing **Date**, **Category**, and **Likes**. We use pandas *.date_range()* function to generate 500 dates, starting with January 1, 2022. We use numpy *random.choice()* generate random category entries. Finally, we use numpy *random.randint()* to generate a random integer for number of "likes."
+```
+tweet_dict = {'Date': pd.date_range('2022-01-01', periods = 500),
+              'Category': [np.random.choice(categories) for _ in range(500)],
+              'Likes': np.random.randint(0, 10000, size = 500)}
+``` 
