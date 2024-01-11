@@ -129,3 +129,5 @@ fig.show()
 Throughout the document, we described the process followed and the results found. It would be interesting to run this same scenario with real tweet data. I feel the simulated data is perhaps a bit to clean to draw useful insights.
 Regardless, this was fun. I prefer to use Plotly for plots as, in my opinion, it provide cleaner plots for publication or display on a web page.
 Thank you.
+
+# Project Link
