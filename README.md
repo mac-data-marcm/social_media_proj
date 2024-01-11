@@ -84,7 +84,7 @@ fig.show()
 ```
 ![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/f98fe5db-af24-4fca-a280-a5b65d995cc1)
 
-Next, we look at a count of tweets by category. We see that random seeding of categories placed a similar number of "tweets" in each Category
+Next, we look at a count of tweets by category. We see that random seeding of categories placed a similar number of "tweets" in each Category.
 ```
 fig = px.bar(cat_counts, x = 'Category', y = 'count',
              text_auto = '.2f',
@@ -93,5 +93,19 @@ fig = px.bar(cat_counts, x = 'Category', y = 'count',
 fig.show()
 ```
 ![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/dcfa3c55-d963-431b-88c6-5c6089a36cec)
+
+Next, we take a look at a box plot showing the relationship between **Likes** and **Category**. We note the following:
+- The distributions are similar
+- There is slight skewing - Travel, Food, Health, and Sports to the left; and Fitness and Music to the right
+- Dispersions are quite similar
+
+```
+fig = px.box(tweets_df, y = 'Category', x = 'Likes'
+            )
+
+fig.show()
+```
+![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/17e02b7c-7490-4f4e-b965-c08eb5105a76)
+
 
 
