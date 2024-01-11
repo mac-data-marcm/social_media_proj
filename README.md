@@ -42,3 +42,22 @@ tweets_df.info()
 | Date | datetime |
 | Category | object |
 | Likes | integer |
+
+Next, we use the *.describe()* function to display summary statistics for the numeric columns. Statistics include record count, mean, standard deviation, min, max, and quartiles.
+```
+tweets_df.describe(include = ['integer'])
+```
+
+Finally, we'll display the count of records for each category by using the *.value_counts()* function. 
+```
+cat_counts = tweets_df.Category.value_counts().reset_index()
+cat_counts
+```
+| Category | Count |
+|----------|-------|
+| Sports | 93 |
+| Travel | 88 |
+| Food | 84 |
+| Fitness | 81 |
+| Music | 79 |
+| Health | 75 | 
