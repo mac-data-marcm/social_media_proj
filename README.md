@@ -131,3 +131,4 @@ Regardless, this was fun. I prefer to use Plotly for plots as, in my opinion, it
 Thank you.
 
 # Project Link
+The **Social Media Project** is located on [GitHub] (https://github.com/mac-data-marcm/social_media_proj/tree/main).
