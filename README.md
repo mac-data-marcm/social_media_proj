@@ -61,3 +61,11 @@ cat_counts
 | Fitness | 81 |
 | Music | 79 |
 | Health | 75 | 
+
+# Cleaning the data
+The nature of how we generated the data means there is no data cleaning required. For example, the **Date** field is already in the *datetime* format, so no change of data type is needed. Similalry, **Likes** was created using the numpy *random.randint()* function as an integer field.
+In addition to ensuring proper data types, the cleaning step would also include an examination and resolution of missing values and duplicate rows. These would be examined using the following code, both of which returned a value of zero (0) indicating no missing values and no duplicate rows.
+```
+print('Missing values:\n', tweets_df.isnull().sum())
+print('Duplicate rows: ', tweets_df.duplicated().sum())
+```
