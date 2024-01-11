@@ -73,6 +73,14 @@ print('Duplicate rows: ', tweets_df.duplicated().sum())
 # Visualize and analyze the data
 In this section, we prepare and display visualizations to help draw inferences from the data.
 
-We start by examining a histogram of likes, which produces a fairly normal distribution.
+We start by examining a histogram of likes. We used the Plotly histogram feature to include a box plot above the histogram that helps us see this is a fairly normal distribution.
+```
+fig = px.histogram(tweets_df, x = 'Likes',
+                  nbins = 20,
+                  marginal = 'box',
+                  title = 'Distribution of Likes')
+
+fig.show()
+```
 ![image](https://github.com/mac-data-marcm/social_media_proj/assets/148590292/f98fe5db-af24-4fca-a280-a5b65d995cc1)
 
