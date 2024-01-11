@@ -32,3 +32,13 @@ In this step, we load the created dictionary data into a pandas dataframe using 
 tweets_df = pd.DataFrame.from_dict(tweet_dict)
 tweets_df.head()
 ```
+
+Next, we display information about the *tweets_df* dataframe using the *.info()* function. This function displays information about the dataframe including the names of columns, number of records in each column, and column data type.
+```
+tweets_df.info()
+```
+| Column | Data Type |
+|--------|-----------|
+| Date | datetime |
+| Category | object |
+| Likes | integer |
