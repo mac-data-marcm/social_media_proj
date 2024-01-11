@@ -25,3 +25,10 @@ tweet_dict = {'Date': pd.date_range('2022-01-01', periods = 500),
               'Category': [np.random.choice(categories) for _ in range(500)],
               'Likes': np.random.randint(0, 10000, size = 500)}
 ``` 
+
+# Load data into pandas dataframe and explore data
+In this step, we load the created dictionary data into a pandas dataframe using the *DataFrame.from_dict()* function and display the first few rows with the *.head()* function.
+```
+tweets_df = pd.DataFrame.from_dict(tweet_dict)
+tweets_df.head()
+```
