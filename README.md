@@ -3,3 +3,9 @@
 
 ### Marc Mascaro
 ### January 2024
+
+# Import required libraries
+The following libraries are used:
+| Library | Purpose |
+|---------|---------|
+| Numpy | randomly choose categories and generate randomm number of "likes" |
